@@ -1,0 +1,113 @@
+.container {
+  max-width: 1280 px;
+  margin: 0 auto;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* TODO check if the color in all the site is blue. this was only my bardasht. if yes, 
+  check where it has been overwritten in different parts of the site */
+  color: #335576;
+}
+h1,
+h2,
+h3,
+p,
+a {
+  color: #335576;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 1;
+  padding: 0.625rem 3.75rem;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+button {
+  background-color: #db7a4e;
+  color: #ffffff;
+  border: none;
+  display: inline-block;
+  padding: 0.625rem 2.5rem;
+  margin-top: 0.625rem;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 500;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 15px;
+}
+.nav,
+.nav_menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__link {
+  margin-left: 0.625rem;
+}
+.nav__wordmark {
+  color: #335576;
+  font-weight: bold;
+}
+.nav__link--active {
+  text-decoration: underline;
+  text-decoration-color: #db7a4e;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #fefaf5;
+  padding: 1.25rem 15%;
+  gap: 10px;
+}
+.footer__subtitle{
+  color: #DB7A4E;
+}
+.business-hours__schedule {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+/* gap: 0.625rem; */
+/* margin-top: 2.5rem;  */
+/* padding: 0 2.5rem; */
+.business-hours__day-name {
+  margin-top: 0;
+}
+.social__icons{
+  display: flex;
+  justify-content: space-between;
+  padding: 1.25rem 0;
+  gap: 1.875rem;
+}
+.icon-instagram, .icon-tweeter{
+  width: 34px;
+  height: 34px;
+}
+.icon-facebook{
+  width: 17px;
+  height: 34px;
+}
